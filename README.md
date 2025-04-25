@@ -1,14 +1,13 @@
 # ⚡️ CYBER GAME ZONE ![Cyberpunk Badge](https://img.shields.io/badge/style-Cyberpunk-f20089?style=flat-square&logo=adobe&logoColor=white)
 
+![Screenshot 2025-04-26 020559](https://github.com/user-attachments/assets/acf818c6-df07-4259-83d5-0215c526a0a7)
+
+
 > **A modern, neon-lit, cyberpunk-themed browser gaming portal loaded with stylish effects and addictive games.**
 
 ![Game Zone Banner](https://i.imgur.com/aCXICcv.png)
 
-<div align="center">
-  <a href="https://yourgamezonedemo.com" target="_blank">
-    <img src="https://img.shields.io/badge/-🎮 PLAY NOW-black?style=for-the-badge&logo=github&logoColor=white&color=f20089" />
-  </a>
-</div>
+
 
 ---
 
