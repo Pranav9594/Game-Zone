@@ -5,10 +5,6 @@
 
 > **A modern, neon-lit, cyberpunk-themed browser gaming portal loaded with stylish effects and addictive games.**
 
-![Game Zone Banner](https://i.imgur.com/aCXICcv.png)
-
-
-
 ---
 
 ## ✨ Features
