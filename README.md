@@ -1,6 +1,6 @@
 # Cyber Game Zone
+![Screenshot 2025-07-08 173143](https://github.com/user-attachments/assets/2e51ac4c-8c1f-42ed-aee9-7064aa1fb491)
 
-![Game Zone Banner](https://i.imgur.com/aCXICcv.png)
 
 A modern, cyberpunk-themed gaming portal featuring multiple browser games with a sleek UI and advanced visual effects.
 
@@ -124,10 +124,6 @@ You can customize the game portal by:
 
 3. **Changing animations**
    - Edit animation properties in `css/home.css`
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👏 Acknowledgements
 
