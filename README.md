@@ -26,10 +26,6 @@ A modern, cyberpunk-themed gaming portal featuring multiple browser games with a
   - Statistics dashboard
   - Grid/List view toggle for games
 
-## 🚀 Live Demo
-
-[Play Now](https://yourgamezonedemo.com) (Replace with your actual deployment URL)
-
 ## 🔧 Tech Stack
 
 - HTML5
