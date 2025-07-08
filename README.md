@@ -4,7 +4,7 @@
 
 A modern, cyberpunk-themed gaming portal featuring multiple browser games with a sleek UI and advanced visual effects.
 
-## 🎮 Features
+## 🕹️ Features
 
 - **Multiple Games in One Platform**
   - Memory Match
