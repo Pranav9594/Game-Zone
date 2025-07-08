@@ -1,0 +1,43 @@
+<div class="tictactoe-game">
+    <div class="game-header">
+        <h2>Tic Tac Toe</h2>
+        <div class="game-info">
+            <div class="player-info">
+                <div id="player-x" class="player active">
+                    <span class="player-symbol">X</span>
+                    <span class="player-name">Player 1</span>
+                </div>
+                <div id="player-o" class="player">
+                    <span class="player-symbol">O</span>
+                    <span id="player-o-name" class="player-name">Player 2</span>
+                </div>
+            </div>
+            <div class="high-score">Wins: <span id="high-score">0</span></div>
+        </div>
+    </div>
+    
+    <div class="controls">
+        <button id="vs-player-btn" class="game-button active">2 Players</button>
+        <button id="vs-ai-btn" class="game-button">VS AI</button>
+        <button id="restart-btn" class="game-button">Restart</button>
+    </div>
+    
+    <div id="board" class="game-board">
+        <div class="cell" data-cell-index="0"></div>
+        <div class="cell" data-cell-index="1"></div>
+        <div class="cell" data-cell-index="2"></div>
+        <div class="cell" data-cell-index="3"></div>
+        <div class="cell" data-cell-index="4"></div>
+        <div class="cell" data-cell-index="5"></div>
+        <div class="cell" data-cell-index="6"></div>
+        <div class="cell" data-cell-index="7"></div>
+        <div class="cell" data-cell-index="8"></div>
+    </div>
+    
+    <div id="game-result" class="result-container">
+        <div class="result-message">
+            <h3 id="result-text">Player X Wins!</h3>
+            <button id="play-again-btn" class="game-button">Play Again</button>
+        </div>
+    </div>
+</div> 

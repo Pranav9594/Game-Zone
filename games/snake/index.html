@@ -1,0 +1,38 @@
+<div class="snake-game">
+    <div class="game-header">
+        <h2>Snake Game</h2>
+        <div class="game-stats">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="high-score">High Score: <span id="high-score">0</span></div>
+        </div>
+    </div>
+    
+    <div class="controls">
+        <button id="start-btn" class="game-button">Start Game</button>
+        <button id="restart-btn" class="game-button">Restart</button>
+        <div class="speed-control">
+            <label for="speed-slider">Speed:</label>
+            <input type="range" id="speed-slider" min="1" max="10" value="5">
+        </div>
+    </div>
+    
+    <canvas id="snake-board" width="400" height="400"></canvas>
+    
+    <div class="mobile-controls">
+        <button id="up-btn" class="direction-btn">↑</button>
+        <div class="horizontal-controls">
+            <button id="left-btn" class="direction-btn">←</button>
+            <button id="right-btn" class="direction-btn">→</button>
+        </div>
+        <button id="down-btn" class="direction-btn">↓</button>
+    </div>
+    
+    <div id="game-over" class="result-container">
+        <div class="result-message">
+            <h3>Game Over!</h3>
+            <p>Your Score: <span id="final-score">0</span></p>
+            <p class="new-high-score hidden">🎉 New High Score! 🎉</p>
+            <button id="play-again-btn" class="game-button">Play Again</button>
+        </div>
+    </div>
+</div> 

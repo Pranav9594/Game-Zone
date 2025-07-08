@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Game Zone - Multiple Games in One Place</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Side Navigation -->
+        <nav class="sidenav">
+            <div class="logo">
+                <h1>Game<span>Zone</span></h1>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-item active" data-section="games">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Games</span>
+                </a>
+                <a href="#" class="nav-item" data-section="stats">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Stats</span>
+                </a>
+                <a href="#" class="nav-item" data-section="dev">
+                    <i class="fas fa-code"></i>
+                    <span>Dev Log</span>
+                </a>
+            </div>
+            <div class="nav-footer">
+                <div class="theme-toggle">
+                    <button id="theme-btn" aria-label="Toggle dark/light mode">
+                        <i class="fas fa-sun sun-icon"></i>
+                        <i class="fas fa-moon moon-icon"></i>
+                    </button>
+                </div>
+                <div class="sound-toggle">
+                    <button id="sound-btn" aria-label="Toggle sound effects">
+                        <i class="fas fa-volume-up sound-on"></i>
+                        <i class="fas fa-volume-mute sound-off"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Header -->
+        <header class="mobile-header">
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <h1>Game<span>Zone</span></h1>
+            </div>
+            <div class="mobile-controls">
+                <button id="mobile-theme-btn" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+                <button id="mobile-sound-btn" aria-label="Toggle sound effects">
+                    <i class="fas fa-volume-up sound-on"></i>
+                    <i class="fas fa-volume-mute sound-off"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div class="glitch-lines"></div>
+            
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title glitch-text" data-text="Welcome to Game Zone">Welcome to Game Zone</h1>
+                    <p class="hero-subtitle">Your one-stop destination for classic and modern browser games</p>
+                </div>
+                <div class="hero-particles"></div>
+                <div class="cyber-lines top-left"></div>
+                <div class="cyber-lines bottom-right"></div>
+                <div class="data-stream top"></div>
+                <div class="data-stream bottom"></div>
+                <div class="circuit-overlay"></div>
+            </section>
+
+            <!-- Games Section -->
+            <section id="games-section" class="content-section active">
+                <div class="section-header">
+                    <h2><i class="fas fa-gamepad"></i> Featured Games</h2>
+                    <div class="grid-view-toggle">
+                        <button class="grid-toggle active" data-view="grid"><i class="fas fa-th"></i></button>
+                        <button class="grid-toggle" data-view="list"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+
+                <div class="games-grid">
+                    <div class="game-card" data-game="memory">
+                        <div class="game-card-inner">
+                            <div class="game-icon"><i class="fas fa-brain"></i></div>
+                            <h3>Memory Match</h3>
+                            <p>Test your memory by matching pairs of cards</p>
+                            <div class="game-stats">
+                                <div class="stat">
+                                    <i class="fas fa-trophy"></i>
+                                    <span id="memory-highscore">0</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>2 min</span>
+                                </div>
+                            </div>
+                            <button class="play-btn">Play Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card" data-game="tictactoe">
+                        <div class="game-card-inner">
+                            <div class="game-icon"><i class="fas fa-th"></i></div>
+                            <h3>Tic Tac Toe</h3>
+                            <p>Classic game against a friend or AI</p>
+                            <div class="game-stats">
+                                <div class="stat">
+                                    <i class="fas fa-trophy"></i>
+                                    <span id="tictactoe-highscore">0</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>5 min</span>
+                                </div>
+                            </div>
+                            <button class="play-btn">Play Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card" data-game="snake">
+                        <div class="game-card-inner">
+                            <div class="game-icon snake-icon">
+                                <svg viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
+                                    <path d="M19.5,3.09L15,7.59V4H13V11H20V9H16.41L20.91,4.5L19.5,3.09M4,13H6.58L3.05,16.5L4.46,17.91L9,13.41V17H11V10H4V13M20,15H13V17H20V15M11,19H4V21H11V19Z"/>
+                                </svg>
+                                <div class="food-icon">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="#ff5252">
+                                        <circle cx="12" cy="12" r="8"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3>Snake</h3>
+                            <p>Grow your snake by eating food, avoid walls!</p>
+                            <div class="game-stats">
+                                <div class="stat">
+                                    <i class="fas fa-trophy"></i>
+                                    <span id="snake-highscore">0</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>∞</span>
+                                </div>
+                            </div>
+                            <button class="play-btn">Play Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card" data-game="quiz">
+                        <div class="game-card-inner">
+                            <div class="game-icon"><i class="fas fa-question-circle"></i></div>
+                            <h3>General Knowledge Quiz</h3>
+                            <p>Test your knowledge across various topics</p>
+                            <div class="game-stats">
+                                <div class="stat">
+                                    <i class="fas fa-trophy"></i>
+                                    <span id="quiz-highscore">0</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>10 min</span>
+                                </div>
+                            </div>
+                            <button class="play-btn">Play Now</button>
+                        </div>
+                    </div>
+
+                    <div class="game-card" data-game="racing">
+                        <div class="game-card-inner">
+                            <div class="game-icon"><i class="fas fa-car"></i></div>
+                            <h3>Cyber Racing</h3>
+                            <p>Speed through neon tracks in this futuristic racing game</p>
+                            <div class="game-stats">
+                                <div class="stat">
+                                    <i class="fas fa-trophy"></i>
+                                    <span id="racing-highscore">0</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>∞</span>
+                                </div>
+                            </div>
+                            <button class="play-btn">Play Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section id="stats-section" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-chart-bar"></i> Your Statistics</h2>
+                </div>
+                <div class="stats-dashboard">
+                    <div class="stats-card">
+                        <h3>Game Activity</h3>
+                        <div class="stats-chart">
+                            <div class="placeholder-chart">Statistics Dashboard Coming Soon</div>
+                        </div>
+                    </div>
+                    <div class="stats-card">
+                        <h3>High Scores</h3>
+                        <ul class="highscore-list">
+                            <li><span>Memory Match</span> <span id="stats-memory">0</span></li>
+                            <li><span>Tic Tac Toe</span> <span id="stats-tictactoe">0</span></li>
+                            <li><span>Snake</span> <span id="stats-snake">0</span></li>
+                            <li><span>Quiz</span> <span id="stats-quiz">0</span></li>
+                            <li><span>Cyber Racing</span> <span id="stats-racing">0</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dev Log Section -->
+            <section id="dev-section" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-code"></i> Developer Log</h2>
+                </div>
+                <div class="dev-logs">
+                    <div class="log-entry">
+                        <div class="log-date">2023-11-15</div>
+                        <div class="log-message">
+                            <h3>New UI Released</h3>
+                            <p>Launched the new cyberpunk-inspired UI with improved performance and responsive design.</p>
+                            <div class="log-tags">
+                                <span class="tag">UI</span>
+                                <span class="tag">Update</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="log-entry">
+                        <div class="log-date">2023-11-01</div>
+                        <div class="log-message">
+                            <h3>Snake Game Improvements</h3>
+                            <p>Added new features to Snake game including speed controls and special food items.</p>
+                            <div class="log-tags">
+                                <span class="tag">Game</span>
+                                <span class="tag">Feature</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Game Modal -->
+        <div id="game-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modal-title">Game Title</h2>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div id="game-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Game Zone. All games created with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/sound.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

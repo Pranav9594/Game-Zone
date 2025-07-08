@@ -1,0 +1,28 @@
+<div class="memory-game">
+    <div class="game-header">
+        <h2>Memory Match</h2>
+        <div class="game-stats">
+            <div class="moves">Moves: <span id="moves-count">0</span></div>
+            <div class="timer">Time: <span id="time">00:00</span></div>
+            <div class="high-score">Best Score: <span id="high-score">0</span> moves</div>
+        </div>
+    </div>
+    
+    <div class="controls">
+        <button id="start-btn" class="game-button">Start Game</button>
+        <button id="restart-btn" class="game-button">Restart</button>
+    </div>
+    
+    <div id="memory-cards" class="card-container">
+        <!-- Cards will be dynamically generated here -->
+    </div>
+    
+    <div id="game-result" class="result-container">
+        <div class="result-message">
+            <h3>Congratulations!</h3>
+            <p>You completed the game in <span id="final-moves">0</span> moves and <span id="final-time">00:00</span></p>
+            <p class="new-high-score hidden">🎉 New High Score! 🎉</p>
+            <button id="play-again-btn" class="game-button">Play Again</button>
+        </div>
+    </div>
+</div> 

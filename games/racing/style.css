@@ -1,0 +1,201 @@
+/* Racing Game Styles */
+.racing-game-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.game-dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(15, 255, 255, 0.2);
+    background-color: rgba(10, 10, 24, 0.7);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.score, .high-score {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(15, 255, 255, 0.5);
+}
+
+.controls-info {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.game-area {
+    position: relative;
+    flex: 1;
+    min-height: 500px;
+    background-color: #0a0a18;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#game-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(10, 10, 24, 0.85);
+    z-index: 10;
+    padding: 2rem;
+    text-align: center;
+}
+
+.overlay h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 15px rgba(15, 255, 255, 0.7);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    position: relative;
+}
+
+.overlay h2::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+    bottom: -10px;
+    left: 25%;
+}
+
+.overlay p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    max-width: 400px;
+}
+
+.game-button {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.game-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    transition: opacity 0.3s ease;
+    z-index: -1;
+    opacity: 0;
+}
+
+.game-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(15, 255, 255, 0.5);
+}
+
+.game-button:hover::before {
+    opacity: 1;
+}
+
+.final-score-container {
+    background-color: rgba(15, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(15, 255, 255, 0.2);
+    margin-bottom: 2rem;
+}
+
+.final-score-container p {
+    margin-bottom: 0.5rem;
+}
+
+.new-record {
+    color: var(--secondary-color) !important;
+    font-weight: 700;
+    font-size: 1.2rem !important;
+    text-shadow: 0 0 10px rgba(254, 83, 187, 0.7);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.7; }
+    50% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .game-dashboard {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .score-container {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    
+    .overlay h2 {
+        font-size: 2rem;
+    }
+    
+    .overlay p {
+        font-size: 1rem;
+    }
+    
+    .game-button {
+        padding: 0.7rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-area {
+        min-height: 400px;
+    }
+} 

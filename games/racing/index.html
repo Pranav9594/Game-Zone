@@ -1,0 +1,30 @@
+<div class="racing-game-container">
+    <div class="game-dashboard">
+        <div class="score-container">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="high-score">High Score: <span id="highScore">0</span></div>
+        </div>
+        <div class="controls-info">
+            <p>Use ← → arrow keys or A D keys to steer</p>
+        </div>
+    </div>
+    
+    <div class="game-area">
+        <div id="start-screen" class="overlay">
+            <h2>Cyber Racing</h2>
+            <p>Speed through neon roads, avoid obstacles and set a high score!</p>
+            <button id="start-button" class="game-button">Start Race</button>
+        </div>
+        
+        <div id="game-over-screen" class="overlay hidden">
+            <h2>Game Over</h2>
+            <div class="final-score-container">
+                <p>Your Score: <span id="final-score">0</span></p>
+                <p class="new-record hidden">New Record!</p>
+            </div>
+            <button id="restart-button" class="game-button">Race Again</button>
+        </div>
+        
+        <canvas id="game-canvas"></canvas>
+    </div>
+</div> 

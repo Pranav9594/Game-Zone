@@ -1,0 +1,48 @@
+<div class="quiz-game">
+    <div class="game-header">
+        <h2>General Knowledge Quiz</h2>
+        <div class="game-stats">
+            <div class="question-counter">Question: <span id="current-question">0</span>/<span id="total-questions">10</span></div>
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="high-score">High Score: <span id="high-score">0</span></div>
+        </div>
+    </div>
+    
+    <div class="game-container">
+        <div id="category-selection" class="category-selection">
+            <h3>Select a Category</h3>
+            <div class="categories">
+                <button class="category-btn" data-category="general">General Knowledge</button>
+                <button class="category-btn" data-category="science">Science</button>
+                <button class="category-btn" data-category="history">History</button>
+                <button class="category-btn" data-category="geography">Geography</button>
+                <button class="category-btn" data-category="entertainment">Entertainment</button>
+            </div>
+        </div>
+        
+        <div id="question-container" class="question-container hidden">
+            <div id="timer-bar" class="timer-bar">
+                <div id="timer-progress" class="timer-progress"></div>
+            </div>
+            <h3 id="question-text" class="question-text">Question text will appear here</h3>
+            <div id="answers" class="answers">
+                <!-- Answer buttons will be added dynamically -->
+            </div>
+        </div>
+    </div>
+    
+    <div class="controls">
+        <button id="start-btn" class="game-button">Start Quiz</button>
+        <button id="next-btn" class="game-button hidden">Next Question</button>
+    </div>
+    
+    <div id="result-modal" class="result-container">
+        <div class="result-message">
+            <h3>Quiz Complete!</h3>
+            <p>Your Score: <span id="final-score">0</span>/<span id="max-score">10</span></p>
+            <div id="feedback" class="feedback"></div>
+            <p class="new-high-score hidden">🎉 New High Score! 🎉</p>
+            <button id="retry-btn" class="game-button">Try Again</button>
+        </div>
+    </div>
+</div> 

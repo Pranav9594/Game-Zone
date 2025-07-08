@@ -1,0 +1,300 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: var(--card-bg-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    transition: background-color var(--transition-speed);
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Theme Toggle Button */
+#theme-btn, #sound-btn {
+    background: transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+#theme-btn:hover, #sound-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(74, 107, 255, 0.5);
+}
+
+.sun-icon, .sound-on {
+    display: block;
+}
+
+.moon-icon, .sound-off {
+    display: none;
+}
+
+[data-theme="dark"] .sun-icon {
+    display: none;
+}
+
+[data-theme="dark"] .moon-icon {
+    display: block;
+}
+
+[data-sound="off"] .sound-on {
+    display: none;
+}
+
+[data-sound="off"] .sound-off {
+    display: block;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 3%;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    #theme-btn, #sound-btn {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Sidebar Navigation */
+.sidenav {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--nav-bg-color);
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    border-right: var(--card-border);
+    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.sidenav .logo {
+    padding: 1.5rem;
+    border-bottom: var(--card-border);
+    text-align: center;
+}
+
+.sidenav .logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.sidenav .logo h1 span {
+    color: var(--accent-color);
+    -webkit-text-fill-color: var(--accent-color);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    flex-grow: 1;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    position: relative;
+    border-left: 3px solid transparent;
+}
+
+.nav-item:hover {
+    background-color: rgba(15, 255, 255, 0.05);
+    color: var(--primary-color);
+    text-shadow: none;
+}
+
+.nav-item.active {
+    color: var(--primary-color);
+    border-left: 3px solid var(--primary-color);
+    background-color: rgba(15, 255, 255, 0.05);
+}
+
+.nav-item i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    border-top: var(--card-border);
+}
+
+/* Mobile Header */
+.mobile-header {
+    display: none;
+    position: sticky;
+    top: 0;
+    z-index: 90;
+    background-color: var(--nav-bg-color);
+    border-bottom: var(--card-border);
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-header .logo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mobile-header .logo h1 span {
+    color: var(--accent-color);
+    -webkit-text-fill-color: var(--accent-color);
+}
+
+.menu-toggle {
+    background: transparent;
+    border: var(--glass-border);
+    color: var(--text-color);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    background-color: var(--glass-bg);
+}
+
+.mobile-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Theme Toggle Button */
+#theme-btn, #sound-btn, #mobile-theme-btn, #mobile-sound-btn {
+    background-color: var(--glass-bg);
+    border: var(--glass-border);
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+#theme-btn:hover, #sound-btn:hover, #mobile-theme-btn:hover, #mobile-sound-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(15, 255, 255, 0.3);
+    color: var(--primary-color);
+}
+
+.sun-icon, .sound-on {
+    display: block;
+}
+
+.moon-icon, .sound-off {
+    display: none;
+}
+
+[data-theme="light"] .sun-icon {
+    display: none;
+}
+
+[data-theme="light"] .moon-icon {
+    display: block;
+}
+
+[data-sound="off"] .sound-on {
+    display: none;
+}
+
+[data-sound="off"] .sound-off {
+    display: block;
+}
+
+/* Mobile navigation */
+@media (max-width: 992px) {
+    .sidenav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .sidenav.active {
+        transform: translateX(0);
+    }
+
+    .mobile-header {
+        display: flex;
+    }
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .sidenav {
+        width: 250px; /* Keep the same width on mobile */
+    }
+    
+    .mobile-header .logo h1 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Sidenav Overlay */
+.sidenav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 95;
+    display: none;
+}
+
+.sidenav-overlay.active {
+    display: block;
+} 
