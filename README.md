@@ -120,5 +120,5 @@ You can customize the game portal by:
 
 3. **Changing animations**
    - Edit animation properties in `css/home.css`
----
+---thewuhefhwifhhfifhahifjfbjjhdqqidowwdudd  icjudhfoq  -do  wofojfoqkf665ofifojhfhfwjfwq6\77557fefbfjsbfjfnbdvsnjfwidjwodnqjfbfjwjjfbfklddnjvhfwi wwifffhje
 
