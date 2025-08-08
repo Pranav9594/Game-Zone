@@ -121,6 +121,20 @@ You can customize the game portal by:
 3. **Changing animations**
    - Edit animation properties in `css/home.css`
 ---
+## 🎨 Customization
 
+You can customize the game portal by:
+
+1. **Modifying the theme colors**
+   - Edit CSS variables in `css/style.css`
+
+2. **Adding new games**
+   - Create a new directory in the `games/` folder
+   - Follow the same structure as existing games
+   - Update the game cards in `index.html`
+
+3. **Changing animations**
+   - Edit animation properties in `css/home.css`
+---
 
 
