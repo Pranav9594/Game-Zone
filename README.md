@@ -128,4 +128,4 @@ The game portal is fully responsive and works on:
 - Mobile devices
 
 The layout adapts automatically to provide the best experience on any screen size.
----
+----
