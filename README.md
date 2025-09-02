@@ -120,7 +120,7 @@ You can customize the game portal by:
 
 3. **Changing animations**
    - Edit animation properties in `css/home.css`
---------
+---
 
 The game portal is fully responsive and works on:
 - Desktops
