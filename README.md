@@ -276,22 +276,4 @@ The layout adapts automatically to provide the best experience on any screen siz
 
 You can customize the game portal by:
 
-1. **Modifying the theme colors**
-   - Edit CSS variables in `css/style.css`
-
-2. **Adding new games**
-   - Create a new directory in the `games/` folder
-   - Follow the same structure as existing games
-   - Update the game cards in `index.html`
-
-3. **Changing animations**
-   - Edit animation properties in `css/home.css`
----
-
-The game portal is fully responsive and works on:
-- Desktops
-- Tablets
-- Mobile devices
-
-The layout adapts automatically to provide the best experience on any screen size.
-----
+1. **Modifying the theme
