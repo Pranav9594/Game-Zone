@@ -237,19 +237,7 @@ cyber-game-zone/
      # Using Python
      python -m http.server
      
-     # Using Node.js
-     npx serve
-     ```
-
-3. **Development**
-   - No build process required
-   - Edit HTML, CSS, and JavaScript files directly
-   - Refresh the browser to see changes
-
-## 🎯 Game Descriptions
-
-### Memory Match
-Test your memory by matching pairs of cards. Find all pairs in the shortest time possible to achieve a high score.
+     # Using N
 
 ### Tic Tac Toe
 Classic game of X's and O's. Play against a friend or challenge the AI in this strategic mind game.
