@@ -258,22 +258,3 @@ Classic game of X's and O's. Play against a friend or challenge the AI in this s
 Control a snake to eat food and grow longer. Avoid hitting walls and your own tail as you aim for the highest score.
 
 ### Quiz
-Test your knowledge with questions across various categories. Answer correctly to earn points and compete for the top spot.
-
-### Cyber Racing
-Navigate through a neon track avoiding obstacles. Test your reflexes in this fast-paced racing game.
-
-## 📱 Responsive Design
-
-The game portal is fully responsive and works on:
-- Desktops
-- Tablets
-- Mobile devices
-
-The layout adapts automatically to provide the best experience on any screen size.
-
-## 🎨 Customization
-
-You can customize the game portal by:
-
-1. **Modifying the theme
