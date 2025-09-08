@@ -164,10 +164,7 @@ The layout adapts automatically to provide the best experience on any screen siz
 
 
 
-3. **Changing animations**
-   - Edit animation properties in `css/home.css`
----
-
+3.
 The game portal is fully responsive and works on:
 - Desktops
 - Tablets
